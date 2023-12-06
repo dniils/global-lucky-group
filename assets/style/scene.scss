@@ -1,0 +1,100 @@
+.scene-wrapper {
+  position: absolute;
+  top: 0;
+  left: 700px;
+
+  .objects-and-image {
+    position: relative;
+  }
+
+  .circle-and-flags {
+    position: relative;
+  }
+
+  .flag {
+    position: absolute;
+    border-radius: 50%;
+    outline: 10px solid #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &-s {
+      width: 30px;
+      height: 30px;
+      background-image: url('../images/flags/india-flag.png');
+    }
+
+    &-m {
+      width: 40px;
+      height: 40px;
+      background-image: url('../images/flags/italy-flag.png');
+    }
+
+    &-l {
+      width: 50px;
+      height: 50px;
+      background-image: url('../images/flags/india-flag.png');
+    }
+
+    &-xl {
+      width: 60px;
+      height: 60px;
+      background-image: url('../images/flags/uk-flag.png');
+    }
+
+    &-1 {
+      top: 200px;
+      left: -90px;
+    }
+
+    &-2 {
+      top: 200px;
+      left: 350px;
+    }
+
+    &-3 {
+      top: 376px;
+      left: 120px;
+    }
+
+    &-4 {
+      top: -70px;
+      left: 140px;
+    }
+
+    &-5 {
+      top: 30px;
+      left: 310px;
+    }
+
+    &-6 {
+      top: 30px;
+      left: -80px;
+    }
+  }
+
+  .circle {
+    position: absolute;
+    top: -53px;
+    left: -82px;
+    width: 450px;
+    height: 450px;
+    background-color: transparent;
+    border: 2px solid #e8e8e8;
+    border-radius: 50%;
+  }
+
+  .circle-filled {
+    position: absolute;
+    top: 78px;
+    width: 280px;
+    height: 280px;
+    background-color: #48b774;
+    border-radius: 50%;
+  }
+
+  .hero-image {
+    position: absolute;
+  }
+}

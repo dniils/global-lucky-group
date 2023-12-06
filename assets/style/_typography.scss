@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  user-select: none;
+}
+
+.header {
+  &__logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #48b774;
+  }
+
+  &__title {
+    font-size: 25px;
+    color: #2d2d2d;
+    font-weight: 500;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 16px;
+    color: #4a4a4a;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: #000;
+    }
+
+    &-active {
+      &:hover {
+        color: #4a4a4a;
+      }
+    }
+  }
+}
+
+.module {
+  &__title {
+    font-size: 48px;
+    color: #2d2d2d;
+    font-weight: 700;
+    line-height: 65px;
+  }
+
+  &__description {
+    color: #7c7c7c;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+}
+
+.title-highlight {
+  color: #ff8345;
+}
+
+.input {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.16px;
+
+  &::placeholder {
+    color: #a1a1a1;
+  }
+}
+
+.users {
+  &__info {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #707070;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fd905a;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: #ffac82;
+    }
+  }
+}
