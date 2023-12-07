@@ -23,23 +23,49 @@
           <li><a class="header__link" href="#">Help</a></li>
         </ul>
       </nav>
-      <button class="button header__button">Sign Up</button>
+      <div class="header__button-burger-wrapper">
+        <button class="button header__button">Sign Up</button>
+        <div class="button-burger-icon">
+          <div class="button-burger-icon__line"></div>
+          <div class="button-burger-icon__line"></div>
+          <div class="button-burger-icon__line"></div>
+        </div>
+      </div>
     </header>
 
     <section class="module">
       <div class="module__content">
-        <h2 class="module__title">Now Buy Your <br> PIN or <span class="module__title title-highlight">Top Up</span>
-          <br>
-          With Bank
-          Transfer
+        <h2 class="module__title">Now Buy Your PIN&nbsp;or&nbsp;<span
+            class="module__title title-highlight">Top&nbsp;Up</span>
+          With&nbsp;Bank&nbsp;Transfer
         </h2>
         <div class="module__description">We Make international calling simple, relible, and cheap based on your unique
           calling behavior.</div>
         <div class="button module__button">Get Started</div>
+
         <form class="search-form">
-          <input type="text" class="input search-form__input" placeholder="Where do you want to call?" />
+          <input type="text" class="input search-form__input" placeholder="Where do you want to call?" maxlength="12" />
           <button class="button search-form__button search-icon"></button>
         </form>
+
+        <div class="users">
+          <div class="users__icons">
+            <div class="users__icon"></div>
+            <div class="users__icon">
+              <img class="users__image" src="./assets/images/users-images/user-photo-1.jpg" alt="user">
+            </div>
+            <div class="users__icon">
+              <img class="users__image" src="./assets/images/users-images/user-photo-2.jpg" alt="user">
+            </div>
+            <div class="users__icon">
+              <img class="users__image" src="./assets/images/users-images/user-photo-3.jpg" alt="user">
+            </div>
+          </div>
+          <div class="users__info">
+            <span>45k+</span> Regular Users.
+            <a href="#" class="users__link">View&nbsp;Price&nbsp;Plan</a>
+          </div>
+        </div>
       </div>
 
       <div class="scene">
@@ -57,24 +83,7 @@
       </div>
     </section>
 
-    <div class="users">
-      <div class="users__icons">
-        <div class="users__icon"></div>
-        <div class="users__icon">
-          <img class="users__image" src="./assets/images/users-images/user-photo-1.jpg" alt="user">
-        </div>
-        <div class="users__icon">
-          <img class="users__image" src="./assets/images/users-images/user-photo-2.jpg" alt="user">
-        </div>
-        <div class="users__icon">
-          <img class="users__image" src="./assets/images/users-images/user-photo-3.jpg" alt="user">
-        </div>
-      </div>
-      <div class="users__info">
-        <span>45k+</span> Regular Users.
-        <a href="#" class="users__link">View Price Plan</a>
-      </div>
-    </div>
+
 
   </div>
   <script type="module" src="/main.js"></script>

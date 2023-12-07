@@ -1,19 +1,51 @@
 @import 'animation';
 
 .scene {
+  position: relative;
   display: flex;
   justify-content: center;
+  transition: right 0.2s ease-in-out;
 
-  .objects-and-image {
-    position: relative;
+  scale: 0.8;
+
+  @media screen and (min-width: 900px) {
+    position: fixed;
+    bottom: 0;
+    right: 3vw;
+    height: 567px;
+    scale: 1;
+  }
+
+  @media screen and (min-width: 1180px) and (max-width: 1400px) {
+    right: 5vw;
+  }
+
+  @media screen and (min-width: 1400px) {
+    right: 10vw;
+  }
+
+  @media screen and (min-width: 1680px) {
+    right: 20vw;
+  }
+
+  @media screen and (min-width: 1920px) {
+    scale: 1.3;
+    height: 636px;
+    right: 23vw;
   }
 
   .circle-and-flags {
     position: relative;
     top: -30px;
+    width: 450px;
+    height: 450px;
     transform-origin: center;
-    transform: rotate(0deg);
     animation: rotation 30s infinite 6.6s linear;
+    transition: filter 1s ease-in-out;
+
+    @media screen and (min-width: 900px) and (max-width: 1060px) {
+      filter: blur(3px);
+    }
   }
 
   .flag {
@@ -114,6 +146,10 @@
     background-color: transparent;
     border: 2px solid #e8e8e8;
     border-radius: 50%;
+
+    @media screen and (max-width: 1260px) {
+      border-width: 3px;
+    }
   }
 
   .circle-filled {
@@ -123,6 +159,11 @@
     height: 280px;
     background-color: #48b774;
     border-radius: 50%;
+    transition: filter 1s ease-in-out;
+
+    @media screen and (min-width: 900px) and (max-width: 1060px) {
+      filter: blur(2px);
+    }
   }
 
   .hero-image {
