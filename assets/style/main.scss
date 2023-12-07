@@ -47,7 +47,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
-    gap: 42px;
+    gap: 45px;
+    margin-left: 30px;
   }
 
   &__link {
@@ -69,16 +70,22 @@ body {
 .module {
   position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  gap: 80px;
   margin-top: 118px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
   &__title {
     max-width: 474px;
   }
 
   &__description {
-    margin-top: 22px;
+    margin-top: 12px;
     max-width: 444px;
   }
 
@@ -120,7 +127,7 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 12px;
-  margin-top: 40px;
+  margin-top: 36px;
 
   &__icons {
     display: flex;

@@ -1,7 +1,8 @@
-.scene-wrapper {
-  position: absolute;
-  top: 0;
-  left: 700px;
+@import 'animation';
+
+.scene {
+  display: flex;
+  justify-content: center;
 
   .objects-and-image {
     position: relative;
@@ -9,6 +10,10 @@
 
   .circle-and-flags {
     position: relative;
+    top: -30px;
+    transform-origin: center;
+    transform: rotate(0deg);
+    animation: rotation 30s infinite 6.6s linear;
   }
 
   .flag {
@@ -18,66 +23,92 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    opacity: 0;
 
     &-s {
       width: 30px;
       height: 30px;
-      background-image: url('../images/flags/india-flag.png');
     }
 
     &-m {
       width: 40px;
       height: 40px;
-      background-image: url('../images/flags/italy-flag.png');
     }
 
     &-l {
       width: 50px;
       height: 50px;
+    }
+
+    &-in {
       background-image: url('../images/flags/india-flag.png');
+    }
+
+    &-it {
+      background-image: url('../images/flags/italy-flag.png');
+    }
+
+    &-de {
+      background-image: url('../images/flags/germany-flag.png');
+    }
+
+    &-uk {
+      background-image: url('../images/flags/uk-flag.png');
+    }
+
+    &-se {
+      background-image: url('../images/flags/sweden-flag.png');
     }
 
     &-xl {
       width: 60px;
       height: 60px;
-      background-image: url('../images/flags/uk-flag.png');
     }
 
     &-1 {
-      top: 200px;
-      left: -90px;
+      top: 270px;
+      left: -5px;
+      animation: flag-1-movement 2s ease-in-out 3s 1 normal forwards,
+        rotation 30s infinite 6.6s linear reverse;
     }
 
     &-2 {
-      top: 200px;
-      left: 350px;
+      top: 270px;
+      left: 430px;
+      animation: flag-2-movement 2s ease-in-out 4.6s 1 normal forwards,
+        rotation 30s infinite 6.6s linear reverse;
     }
 
     &-3 {
-      top: 376px;
-      left: 120px;
+      top: 430px;
+      left: 200px;
+      animation: flag-3-movement 2s ease-in-out 4.6s 1 normal forwards,
+        rotation 30s infinite 6.6s linear reverse;
     }
 
     &-4 {
-      top: -70px;
-      left: 140px;
+      top: -20px;
+      left: 220px;
+      animation: flag-4-movement 2s ease-in-out 3.8s 1 normal forwards,
+        rotation 30s infinite 6.6s linear reverse;
     }
 
     &-5 {
-      top: 30px;
-      left: 310px;
+      top: 100px;
+      left: 400px;
+      animation: flag-5-movement 2s ease-in-out 4.2s 1 normal forwards,
+        rotation 30s infinite 6.6s linear reverse;
     }
 
     &-6 {
-      top: 30px;
-      left: -80px;
+      top: 70px;
+      left: 10px;
+      animation: flag-6-movement 2s ease-in-out 3.4s 1 normal forwards,
+        rotation 30s infinite 6.6s linear reverse;
     }
   }
 
   .circle {
-    position: absolute;
-    top: -53px;
-    left: -82px;
     width: 450px;
     height: 450px;
     background-color: transparent;
@@ -87,7 +118,7 @@
 
   .circle-filled {
     position: absolute;
-    top: 78px;
+    top: 80px;
     width: 280px;
     height: 280px;
     background-color: #48b774;
@@ -96,5 +127,6 @@
 
   .hero-image {
     position: absolute;
+    top: 10px;
   }
 }

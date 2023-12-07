@@ -1,0 +1,94 @@
+@keyframes flag-1-movement {
+  0% {
+    top: 250px;
+    left: 95px;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    top: 270px;
+    left: -5px;
+  }
+}
+
+@keyframes flag-2-movement {
+  0% {
+    top: 250px;
+    left: 320px;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    top: 270px;
+    left: 430px;
+  }
+}
+
+@keyframes flag-3-movement {
+  0% {
+    top: 360px;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    top: 430px;
+  }
+}
+
+@keyframes flag-4-movement {
+  0% {
+    top: 140px;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    top: -20px;
+  }
+}
+
+@keyframes flag-5-movement {
+  0% {
+    top: 190px;
+    left: 290px;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    top: 100px;
+    left: 400px;
+  }
+}
+
+@keyframes flag-6-movement {
+  0% {
+    top: 190px;
+    left: 110px;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    top: 70px;
+    left: 10px;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
