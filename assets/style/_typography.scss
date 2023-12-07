@@ -11,46 +11,46 @@
     font-family: 'Roboto', sans-serif;
     font-size: 28px;
     font-weight: 500;
-    color: #48b774;
+    color: var(--green-300);
   }
 
   &__title {
     font-size: 25px;
-    color: #2d2d2d;
+    color: var(--gray-500);
     font-weight: 500;
   }
 
   &__link {
     text-decoration: none;
     font-size: 32px;
-    color: #fff;
+    color: var(--white);
     transition: all 0.2s ease-in-out;
 
     &:hover {
-      color: #fb9b69;
+      color: var(--orange-200);
     }
 
     &_active {
       pointer-events: none;
 
       &:hover {
-        color: #4a4a4a;
+        color: var(--gray-400);
       }
     }
 
     @media screen and (min-width: 768px) {
       font-size: 16px;
-      color: #4a4a4a;
+      color: var(--gray-400);
 
       &:hover {
-        color: #000;
+        color: var(--black);
       }
 
       &_active {
         pointer-events: none;
 
         &:hover {
-          color: #4a4a4a;
+          color: var(--gray-400);
         }
       }
     }
@@ -61,7 +61,7 @@
   &__title {
     font-size: 28px;
     line-height: 36px;
-    color: #2d2d2d;
+    color: var(--gray-500);
     font-weight: 700;
 
     @media screen and (min-width: 375px) {
@@ -76,7 +76,7 @@
   }
 
   &__description {
-    color: #7c7c7c;
+    color: var(--gray-200);
     font-size: 15px;
     font-weight: 500;
     line-height: 26px;
@@ -84,7 +84,7 @@
 }
 
 .title-highlight {
-  color: #ff8345;
+  color: var(--orange-300);
 }
 
 .input {
@@ -94,7 +94,7 @@
   letter-spacing: 0.16px;
 
   &::placeholder {
-    color: #a1a1a1;
+    color: var(--gray-100);
   }
 }
 
@@ -102,7 +102,7 @@
   &__info {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: #707070;
+    color: var(--gray-300);
   }
 
   &__link {
@@ -112,7 +112,7 @@
     transition: color 0.2s ease-in-out;
 
     &:hover {
-      color: #ffac82;
+      color: var(--orange-200);
     }
   }
 }
