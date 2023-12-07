@@ -2,6 +2,7 @@
 @import 'button';
 @import 'scene';
 @import 'burger-icon';
+@import 'overlay';
 
 * {
   margin: 0;
@@ -75,7 +76,7 @@ body {
     background-color: #2d2d2d;
     height: 100vh;
     transform: translateX(100%);
-    z-index: 2;
+    z-index: 3;
 
     @media screen and (min-width: 768px) {
       transform: initial;
@@ -94,10 +95,14 @@ body {
     @media screen and (min-width: 1400px) {
       margin-left: 30px;
     }
+
+    &_active {
+      transform: translateX(0);
+    }
   }
 
   &__link {
-    &-active {
+    &_active {
       cursor: default;
       position: relative;
 
@@ -128,6 +133,7 @@ body {
     align-items: flex-end;
     width: 100%;
     gap: calc(10px + 2vw);
+    z-index: 3;
 
     @media screen and (min-width: 375px) {
       width: initial;
