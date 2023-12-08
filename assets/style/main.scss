@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -20,9 +21,9 @@ body {
   position: relative;
   padding: 30px calc(10px + 3vw);
   max-width: 1400px;
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
-  overflow-x: hidden;
+  overflow-x: clip;
 
   @media screen and (min-width: 431px) {
     padding: 30px calc(30px + 3vw);
@@ -64,7 +65,7 @@ body {
   }
 
   &__links {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     padding: 30px;
