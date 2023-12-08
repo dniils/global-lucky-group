@@ -1,5 +1,6 @@
 import './assets/style/main.scss';
 import './burger';
+import './inputHandler';
 
 const failedToLoadDescriptionMessage =
   'Something went wrong... Description is currently unavailable 😓';
