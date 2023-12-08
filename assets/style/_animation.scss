@@ -92,3 +92,15 @@
     transform: rotate(359deg);
   }
 }
+
+@keyframes loading {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}

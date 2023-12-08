@@ -1,7 +1,8 @@
 import './assets/style/main.scss';
 import './burger';
 
-const descriptionDivElement = document.querySelector('.module__description');
+const failedToLoadDescriptionMessage =
+  'Something went wrong... Description is currently unavailable 😓';
 
 async function getDescription(numberOfSentences) {
   const response = await fetch(
@@ -11,5 +12,28 @@ async function getDescription(numberOfSentences) {
   return data[0];
 }
 
-const description = await getDescription(3);
-descriptionDivElement.innerHTML = description;
+function showSkeletonLoader(element) {
+  element.classList.add('skeleton-loader');
+}
+
+function removeSkeletonLoader(element) {
+  element.classList.remove('skeleton-loader');
+}
+
+async function displayDescription() {
+  const descriptionDivElement = document.querySelector('.module__description');
+
+  showSkeletonLoader(descriptionDivElement);
+
+  try {
+    const descriptionText = await getDescription(3);
+    descriptionDivElement.textContent = descriptionText;
+    removeSkeletonLoader(descriptionDivElement);
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    descriptionDivElement.textContent = failedToLoadDescriptionMessage;
+    removeSkeletonLoader(descriptionDivElement);
+  }
+}
+
+displayDescription();
